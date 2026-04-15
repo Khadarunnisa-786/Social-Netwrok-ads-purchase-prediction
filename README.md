@@ -27,3 +27,37 @@ Achieved good accuracy in predicting whether a user will purchase a product.
 1. Install required libraries  
 2. Run Flask or Streamlit file  
 3. Enter user details to get prediction
+
+
+
+
+   🖼️ Output
+- The app predicts:
+✅ “Will Purchase”
+❌ “Will Not Purchase”
+Displays prediction instantly via Streamlit and flask web apps
+
+
+
+⚙️ Implementation
+- Streamlit:
+Imported all required libraries for data processing, modeling, and UI creation.
+Loaded and cleaned the Social Network Ads dataset.
+Applied preprocessing techniques to prepare the data.
+Trained a Random Forest Classifier and checked its accuracy.
+Saved the trained model using pickle for later use.
+Built a Streamlit web app to take user input, display predictions, and view results in a web browser.
+
+-Flask:
+Imported required libraries like Flask, pickle, and numpy.
+Loaded the pre-trained model (classification.pkl).
+Created a Flask app with a /predict API endpoint.
+Took JSON input (Gender, Age, Estimated Salary) and processed it.
+Used the model to predict and returned the result as JSON, tested using Postman.
+
+
+❓ Problem Statement
+-  The goal is to predict whether a user will purchase a product after viewing an advertisement on a social networking platform.
+The prediction is made based on the user’s Age, Gender, and Estimated Salary.
+
+
